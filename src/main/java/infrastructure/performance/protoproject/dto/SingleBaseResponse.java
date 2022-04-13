@@ -1,7 +1,7 @@
 package infrastructure.performance.protoproject.dto;
 
 
-public class SingleBaseResponse<T> extends infrastructure.performance.lordareon.dto.core.BaseResponse {
+public class SingleBaseResponse<T> extends BaseResponse {
 
     private T data;
     private String uuid;
