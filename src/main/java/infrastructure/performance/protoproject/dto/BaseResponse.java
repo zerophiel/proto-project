@@ -20,9 +20,17 @@ public class BaseResponse implements Serializable {
         return apiVersion;
     }
 
-    public String getMethod() { return method; }
+    public void setApiVersion(String apiVersion) {
+        this.apiVersion = apiVersion;
+    }
 
-    public void setMethod(String method) { this.method = method; }
+    public String getMethod() {
+        return method;
+    }
+
+    public void setMethod(String method) {
+        this.method = method;
+    }
 
     @Override
     public String toString() {

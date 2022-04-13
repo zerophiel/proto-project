@@ -6,4 +6,12 @@ public class ProtoRequest extends BaseRequest {
         super(apiVersion,id,method);
         this.params = params;
     }
+
+    public ProtoRequestParams getParams() {
+        return params;
+    }
+
+    public void setParams(ProtoRequestParams params) {
+        this.params = params;
+    }
 }

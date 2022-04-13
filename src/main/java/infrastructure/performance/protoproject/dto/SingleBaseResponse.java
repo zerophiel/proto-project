@@ -1,8 +1,10 @@
 package infrastructure.performance.protoproject.dto;
 
 
-public class SingleBaseResponse<T> extends BaseResponse {
+import com.fasterxml.jackson.annotation.JsonAutoDetect;
 
+@JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY)
+public class SingleBaseResponse<T> extends BaseResponse {
     private T data;
     private String uuid;
 
@@ -15,16 +17,20 @@ public class SingleBaseResponse<T> extends BaseResponse {
         this.data = data;
     }
 
-    public String getUuid() {
-        return uuid;
-    }
-
     public T getData() {
         return data;
     }
 
     public void setData(T data) {
         this.data = data;
+    }
+
+    public String getUuid() {
+        return uuid;
+    }
+
+    public void setUuid(String uuid) {
+        this.uuid = uuid;
     }
 
     @Override
