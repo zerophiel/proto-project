@@ -1,6 +1,6 @@
 package infrastructure.performance.protoproject.resource;
-import infrastructure.performance.lordareon.dto.core.SingleBaseResponse;
 import infrastructure.performance.protoproject.dto.ProtoRequest;
+import infrastructure.performance.protoproject.dto.SingleBaseResponse;
 import infrastructure.performance.protoproject.service.ProtoProjectService;
 
 import javax.enterprise.context.ApplicationScoped;
