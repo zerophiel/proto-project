@@ -1,9 +1,8 @@
 package infrastructure.performance.protoproject.dto;
 
+import io.quarkus.runtime.annotations.RegisterForReflection;
 
-import com.fasterxml.jackson.annotation.JsonAutoDetect;
-
-@JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY)
+@RegisterForReflection
 public class SingleBaseResponse<T> extends BaseResponse {
     private T data;
     private String uuid;

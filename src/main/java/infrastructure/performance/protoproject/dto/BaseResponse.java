@@ -1,8 +1,10 @@
 package infrastructure.performance.protoproject.dto;
 
-import java.io.Serializable;
+import io.quarkus.runtime.annotations.RegisterForReflection;
 
-public class BaseResponse implements Serializable {
+
+@RegisterForReflection
+public class BaseResponse {
 
     private String apiVersion;
     private String method;
