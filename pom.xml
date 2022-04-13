@@ -57,12 +57,6 @@
     <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-opentelemetry-exporter-otlp</artifactId>
-      <exclusions>
-        <exclusion>
-          <artifactId>gson</artifactId>
-          <groupId>com.google.code.gson</groupId>
-        </exclusion>
-      </exclusions>
     </dependency>
   </dependencies>
   <build>
