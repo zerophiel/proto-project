@@ -1,0 +1,138 @@
+{
+	"info": {
+		"_postman_id": "b226f23c-e6df-4dc0-a68c-4b9c4b06c8ed",
+		"name": "proto-project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST Request",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"apiVersion\": \"1.0.0\",\r\n    \"method\": \"postProto\",\r\n    \"params\": {\r\n        \"number\": 1000\r\n    },\r\n    \"id\": \"testing\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/proto-project",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"proto-project"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Request",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/proto-project",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"proto-project"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Request",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/proto-project/100",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"proto-project",
+						"100"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Request",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"apiVersion\": \"1.0.0\",\r\n    \"method\": \"postProto\",\r\n    \"params\": {\r\n        \"number\": 1000\r\n    },\r\n    \"id\": \"testing\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/proto-project",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"proto-project"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
